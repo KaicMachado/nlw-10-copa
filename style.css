@@ -119,21 +119,26 @@ header {
     color: #E1E1E6;
 }
 
+.heading:hover,
 .card h2:hover,
 .card ul li strong:hover,
 .card ul li img:hover {
     transform:scale(1.1);
 }
 
+.heading,
 .card h2,
 .card ul li strong,
 .card ul li img {
     transition: transform 0.3s;
 }
 
+.heading {
+    animation: appear .9s forwards;
+}
 .card {
     opacity: 0;
-    animation: appear .2s forwards;
+    animation: appear .8s forwards;
 }
 
 @keyframes appear {
